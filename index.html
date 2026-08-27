@@ -1,218 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vishnu Trivedi | Pharmacist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<title>Vishnu Trivedi | Pharmacist</title>
 
-    body {
-      background: #f4f9f8;
-      color: #222;
-      line-height: 1.6;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
 
-    header {
-      background: linear-gradient(135deg, #087f5b, #0ca678);
-      color: white;
-      text-align: center;
-      padding: 55px 20px;
-    }
+body{
+  background:#f5fbf9;
+  color:#1f2937;
+  line-height:1.6;
+}
 
-    header h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
-    }
+header{
+  background:linear-gradient(135deg,#087f5b,#12b886);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
 
-    header p {
-      font-size: 18px;
-    }
+header h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
 
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      z-index: 10;
-    }
+header p{
+  font-size:19px;
+}
 
-    nav a {
-      color: #087f5b;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
+nav{
+  background:white;
+  padding:16px 10px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 50px 20px;
-    }
+nav a{
+  color:#087f5b;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 10px;
+}
 
-    h2 {
-      color: #087f5b;
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 30px;
-    }
+section{
+  max-width:1050px;
+  margin:auto;
+  padding:60px 20px;
+}
 
-    .about {
-      text-align: center;
-      background: white;
-      border-radius: 15px;
-      padding: 30px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
+h2{
+  text-align:center;
+  color:#087f5b;
+  font-size:32px;
+  margin-bottom:30px;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.hero-box,.about-box{
+  background:white;
+  border-radius:20px;
+  padding:35px;
+  text-align:center;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
+.hero-box h2{
+  margin-bottom:15px;
+}
 
-    .card h3 {
-      color: #087f5b;
-      margin-bottom: 10px;
-    }
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+}
 
-    .contact {
-      background: #087f5b;
-      color: white;
-      text-align: center;
-      border-radius: 15px;
-      padding: 35px 20px;
-    }
+.card{
+  background:white;
+  padding:30px 22px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 7px 22px rgba(0,0,0,.08);
+}
 
-    .contact h2 {
-      color: white;
-    }
+.card h3{
+  color:#087f5b;
+  margin-bottom:12px;
+}
 
-    footer {
-      background: #073b2a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
+.icon{
+  font-size:42px;
+  margin-bottom:12px;
+}
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 30px;
-      }
+.contact{
+  background:linear-gradient(135deg,#087f5b,#12b886);
+  color:white;
+  text-align:center;
+  border-radius:20px;
+  padding:45px 20px;
+}
 
-      nav a {
-        margin: 0 5px;
-        font-size: 14px;
-      }
-    }
-  </style>
-</head>
+.contact h2{
+  color:white;
+}
 
-<body>
+.button{
+  display:inline-block;
+  margin-top:20px;
+  padding:13px 25px;
+  background:white;
+  color:#087f5b;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+}
 
-  <header>
-    <h1>Vishnu Trivedi</h1>
-    <p>Pharmacist | Pharmacy & Medication Education</p>
-  </header>
+footer{
+  background:#063b2a;
+  color:white;
+  text-align:center;
+  padding:22px;
+}
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#knowledge">Knowledge</a>
-    <a href="#articles">Articles</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="home">
-    <h2>Welcome</h2>
-    <div class="about">
-      <p>
-        Welcome to my pharmacy website. Here I share useful information
-        about medicines, pharmacy, healthcare and medication awareness.
-      </p>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about">
-      <p>
-        Hello! I am Vishnu Trivedi, a pharmacy student with an interest
-        in medicines, healthcare and pharmaceutical knowledge.
-      </p>
-    </div>
-  </section>
-
-  <section id="knowledge">
-    <h2>Pharmacy Knowledge</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Medicines</h3>
-        <p>Learn basic information about medicines and their proper use.</p>
-      </div>
-
-      <div class="card">
-        <h3>Pharmacology</h3>
-        <p>Explore useful concepts related to drugs and their actions.</p>
-      </div>
-
-      <div class="card">
-        <h3>Healthcare</h3>
-        <p>Simple and useful healthcare awareness information.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="articles">
-    <h2>Articles</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Pharmacy Education</h3>
-        <p>Useful educational content for pharmacy students.</p>
-      </div>
-
-      <div class="card">
-        <h3>Medication Awareness</h3>
-        <p>Understand medicines and responsible medication practices.</p>
-      </div>
-
-      <div class="card">
-        <h3>Health Awareness</h3>
-        <p>Simple information for better healthcare awareness.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="contact">
-      <h2>Contact</h2>
-      <p>For pharmacy-related educational queries, you can contact me.</p>
-      <p style="margin-top:10px;">Email: your-email@example.com</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Vishnu Trivedi | Pharmacist</p>
-  </footer>
-
-</body>
-</html>
+@media(max-width:600px){
+  header
