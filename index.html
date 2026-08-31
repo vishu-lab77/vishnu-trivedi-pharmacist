@@ -8,29 +8,44 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+
 body{
 font-family:Arial,sans-serif;
-background:#06131d;
-color:#fff;
+background:#fff7fa;
+color:#241820;
 line-height:1.6;
 }
+
 header{
 position:fixed;
-top:0;width:100%;z-index:1000;
-padding:17px 7%;
+top:0;
+width:100%;
+z-index:1000;
+padding:16px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(6,19,29,.94);
+background:rgba(255,255,255,.95);
 backdrop-filter:blur(12px);
-border-bottom:1px solid #17384c;
+border-bottom:1px solid #f1d7e2;
 }
-.logo{font-size:24px;font-weight:bold}
-.logo span{color:#35d0ba}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.logo span{
+color:#e83e7b;
+}
+
 nav a{
-color:#fff;text-decoration:none;
-margin-left:20px;font-size:14px
+color:#241820;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
 }
+
 .hero{
 min-height:100vh;
 padding:130px 8% 70px;
@@ -39,23 +54,41 @@ align-items:center;
 justify-content:space-between;
 gap:50px;
 background:
-radial-gradient(circle at 80% 30%,#145265,transparent 32%),
-linear-gradient(135deg,#06131d,#0a202d);
+radial-gradient(circle at 85% 25%,#ffd6e5,transparent 32%),
+linear-gradient(135deg,#fff,#fff4f8);
 }
-.hero-text{max-width:650px}
+
+.hero-text{
+max-width:650px;
+}
+
 .badge{
 display:inline-block;
 padding:8px 15px;
-border:1px solid #35d0ba;
+border:1px solid #e83e7b;
 border-radius:30px;
-color:#35d0ba;
+color:#d62f6c;
 font-size:13px;
 letter-spacing:1px;
 margin-bottom:20px;
 }
-h1{font-size:64px;line-height:1.05;margin-bottom:20px}
-h1 span{color:#35d0ba}
-.hero p{color:#b9c9d5;font-size:18px;margin-bottom:30px}
+
+h1{
+font-size:64px;
+line-height:1.05;
+margin-bottom:20px;
+}
+
+h1 span{
+color:#e83e7b;
+}
+
+.hero p{
+color:#6f5b64;
+font-size:18px;
+margin-bottom:30px;
+}
+
 .btn{
 display:inline-block;
 padding:13px 23px;
@@ -64,109 +97,193 @@ text-decoration:none;
 font-weight:bold;
 margin:5px;
 }
-.primary{background:#35d0ba;color:#06131d}
-.secondary{border:1px solid #35d0ba;color:white}
+
+.primary{
+background:#e83e7b;
+color:white;
+}
+
+.secondary{
+border:1px solid #e83e7b;
+color:#b51f59;
+}
+
 .profile{
-width:330px;height:420px;
+width:330px;
+height:420px;
 border-radius:30px;
 overflow:hidden;
-border:2px solid #35d0ba;
-background:#102b3b;
-box-shadow:0 0 50px rgba(53,208,186,.15);
+border:2px solid #e83e7b;
+background:#ffe8f0;
+box-shadow:0 18px 45px rgba(232,62,123,.18);
 }
-.profile img{
-width:100%;height:100%;
-object-fit:cover;
-}
+
 .profile-placeholder{
 height:100%;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-color:#8fa6b5;
+color:#a36b80;
 font-size:18px;
 }
-section{padding:90px 8%}
-.about{background:#091b29}
-.section-title{text-align:center;margin-bottom:45px}
-.section-title h2{font-size:38px}
-.section-title p{color:#91a5b4}
-.about-content{
-max-width:850px;margin:auto;text-align:center
+
+section{
+padding:90px 8%;
 }
-.about-content p{color:#b8c8d3;font-size:17px}
+
+.soft{
+background:#fff0f5;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:45px;
+}
+
+.section-title h2{
+font-size:38px;
+}
+
+.section-title p{
+color:#806c75;
+}
+
+.about-content{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+
+.about-content p{
+color:#66545d;
+font-size:17px;
+}
+
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:22px;
 }
+
 .card{
-background:#0c2232;
-border:1px solid #17384c;
+background:white;
+border:1px solid #f0d6e1;
 border-radius:22px;
 padding:28px;
 transition:.3s;
+box-shadow:0 10px 30px rgba(70,25,45,.06);
 }
+
 .card:hover{
 transform:translateY(-8px);
-border-color:#35d0ba;
+border-color:#e83e7b;
 }
-.icon{font-size:40px;margin-bottom:12px}
-.card p{color:#9db0bd;font-size:14px}
+
+.icon{
+font-size:40px;
+margin-bottom:12px;
+}
+
+.card p{
+color:#806c75;
+font-size:14px;
+}
+
 .video-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
+
 .video{
-background:#0c2232;
+background:white;
 border-radius:20px;
 overflow:hidden;
-border:1px solid #17384c;
+border:1px solid #f0d6e1;
+box-shadow:0 10px 30px rgba(70,25,45,.06);
 }
-.video iframe{
+
+.video video{
 width:100%;
-height:210px;
-border:0;
 display:block;
+background:#210f17;
 }
-.video-info{padding:18px}
-.video-info h3{margin-bottom:5px}
-.video-info p{color:#9db0bd;font-size:14px}
+
+.video-info{
+padding:18px;
+}
+
+.video-info h3{
+margin-bottom:5px;
+}
+
+.video-info p{
+color:#806c75;
+font-size:14px;
+}
+
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
 }
+
 .gallery img{
 width:100%;
-height:250px;
+height:230px;
 object-fit:cover;
 border-radius:20px;
-border:1px solid #17384c;
+border:1px solid #f0d6e1;
+transition:.3s;
 }
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
 .contact{
-background:linear-gradient(135deg,#0b2638,#06131d);
+background:linear-gradient(135deg,#ffe3ed,#fff7fa);
 text-align:center;
 }
-.contact-info{margin:25px auto;font-size:17px}
-.contact-info p{margin:8px}
+
+.contact-info{
+margin:25px auto;
+font-size:17px;
+}
+
+.contact-info p{
+margin:8px;
+}
+
 footer{
 text-align:center;
 padding:25px;
-color:#7892a1;
-border-top:1px solid #17334a;
+color:#8c737e;
+border-top:1px solid #f1d7e2;
 }
+
 @media(max-width:750px){
-nav{display:none}
+
+nav{
+display:none;
+}
+
 .hero{
 flex-direction:column;
 text-align:center;
 padding-top:120px;
 }
-h1{font-size:45px}
-.profile{width:270px;height:350px}
+
+h1{
+font-size:45px;
+}
+
+.profile{
+width:270px;
+height:350px;
+}
+
 }
 </style>
 </head>
@@ -174,7 +291,11 @@ h1{font-size:45px}
 <body>
 
 <header>
-<div class="logo">Vishnu<span>.</span></div>
+
+<div class="logo">
+Vishnu<span>.</span>
+</div>
+
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
@@ -182,186 +303,378 @@ h1{font-size:45px}
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
+
+
+<!-- HOME -->
 
 <section class="hero">
 
 <div class="hero-text">
-<div class="badge">PHARMACY • HEALTHCARE • CONTENT</div>
 
-<h1>Vishnu <span>Trivedi</span></h1>
+<div class="badge">
+PHARMACY • HEALTHCARE • CONTENT
+</div>
+
+<h1>
+Vishnu <span>Trivedi</span>
+</h1>
 
 <p>
 Pharmacist & healthcare enthusiast sharing knowledge,
 professional experiences and meaningful healthcare content.
 </p>
 
-<a class="btn primary" href="#contact">Contact Me</a>
-<a class="btn secondary" href="#videos">Watch Videos</a>
+<a class="btn primary" href="#contact">
+Contact Me
+</a>
+
+<a class="btn secondary" href="#videos">
+Watch Video
+</a>
+
 </div>
 
+
+<!-- PERSONAL PHOTO WILL BE ADDED LATER -->
+
 <div class="profile">
+
 <div class="profile-placeholder">
-👨‍⚕️<br><br>
+
+👨‍⚕️
+
+<br><br>
+
 Your professional photo<br>
 will be added here
+
 </div>
+
 </div>
 
 </section>
 
-<section id="about" class="about">
+
+<!-- ABOUT -->
+
+<section id="about" class="soft">
 
 <div class="section-title">
-<h2>About Me</h2>
-<p>My professional journey</p>
+
+<h2>
+About Me
+</h2>
+
+<p>
+My professional journey
+</p>
+
 </div>
 
 <div class="about-content">
+
 <p>
+
 Hello, I'm <b>Vishnu Trivedi</b>, a pharmacy professional
 passionate about healthcare, medicines and continuous learning.
-Through this website, I share my professional journey,
+This website is my professional space to share my journey,
 knowledge and healthcare-related content.
+
 </p>
+
 </div>
 
 </section>
+
+
+<!-- SKILLS -->
 
 <section id="skills">
 
 <div class="section-title">
-<h2>My Expertise</h2>
-<p>Areas I'm passionate about</p>
+
+<h2>
+My Expertise
+</h2>
+
+<p>
+Areas I'm passionate about
+</p>
+
 </div>
+
 
 <div class="cards">
 
 <div class="card">
-<div class="icon">💊</div>
-<h3>Pharmacy</h3>
-<p>Pharmaceutical sciences, medicines and pharmacy knowledge.</p>
+
+<div class="icon">
+💊
 </div>
+
+<h3>
+Pharmacy
+</h3>
+
+<p>
+Pharmaceutical sciences, medicines and pharmacy knowledge.
+</p>
+
+</div>
+
 
 <div class="card">
-<div class="icon">🧪</div>
-<h3>Healthcare</h3>
-<p>Healthcare awareness and educational information.</p>
+
+<div class="icon">
+🧪
 </div>
+
+<h3>
+Healthcare
+</h3>
+
+<p>
+Healthcare awareness and educational information.
+</p>
+
+</div>
+
 
 <div class="card">
-<div class="icon">📚</div>
-<h3>Learning</h3>
-<p>Continuous learning and professional development.</p>
+
+<div class="icon">
+📚
 </div>
+
+<h3>
+Learning
+</h3>
+
+<p>
+Continuous learning and professional development.
+</p>
+
+</div>
+
 
 <div class="card">
-<div class="icon">🎬</div>
-<h3>Content Creation</h3>
-<p>Educational and engaging healthcare content.</p>
+
+<div class="icon">
+🎬
+</div>
+
+<h3>
+Content Creation
+</h3>
+
+<p>
+Educational and engaging healthcare content.
+</p>
+
 </div>
 
 </div>
+
 </section>
 
-<section id="videos" class="about">
+
+<!-- VIDEO -->
+
+<section id="videos" class="soft">
 
 <div class="section-title">
-<h2>Featured Pharmacy Videos</h2>
-<p>Educational videos</p>
+
+<h2>
+Featured Pharmacy Video
+</h2>
+
+<p>
+Drugs & Pharmacy Instruments
+</p>
+
 </div>
+
 
 <div class="video-grid">
 
 <div class="video">
-<iframe
-src="https://www.youtube.com/embed/fWFaBF34pHE"
-title="Introduction to Pharmacology"
-allowfullscreen>
-</iframe>
-<div class="video-info">
-<h3>Introduction to Pharmacology</h3>
-<p>Basics, scope and important pharmacology concepts.</p>
-</div>
-</div>
 
-<div class="video">
-<iframe
-src="https://www.youtube.com/embed/fr5LVQlX6lY"
-title="Pharmacokinetics Absorption"
-allowfullscreen>
-</iframe>
-<div class="video-info">
-<h3>Pharmacokinetics: Absorption</h3>
-<p>Educational lecture on drug absorption.</p>
-</div>
-</div>
+<video controls playsinline poster="pharmacy-tablets.jpg">
 
-<div class="video">
-<iframe
-src="https://www.youtube.com/embed/boZVZN-l4KE"
-title="Pharmacodynamics"
-allowfullscreen>
-</iframe>
+<source
+src="pharmacy-instruments-video.mp4"
+type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+
 <div class="video-info">
-<h3>Pharmacodynamics</h3>
-<p>Learn important principles of drug action.</p>
-</div>
+
+<h3>
+Pharmacy & Instruments
+</h3>
+
+<p>
+A short visual showcase of medicines and common
+pharmacy instruments.
+</p>
+
 </div>
 
 </div>
+
+</div>
+
 </section>
+
+
+<!-- GALLERY -->
 
 <section id="gallery">
 
 <div class="section-title">
-<h2>Professional Gallery</h2>
-<p>Pharmacy & healthcare visuals</p>
+
+<h2>
+Pharmacy Gallery
+</h2>
+
+<p>
+Drugs, instruments & pharmacy visuals
+</p>
+
 </div>
+
 
 <div class="gallery">
 
-<img
-src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=900&q=80"
-alt="Pharmacy">
 
 <img
-src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
-alt="Healthcare">
+src="pharmacy-tablets.jpg"
+alt="Pharmaceutical tablets">
+
 
 <img
-src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=900&q=80"
-alt="Medical">
+src="amoxicillin-capsules.jpg"
+alt="Capsules">
+
+
+<img
+src="liquid-preparation.jpg"
+alt="Liquid preparation">
+
+
+<img
+src="electronic-balance.jpg"
+alt="Electronic weighing balance">
+
+
+<img
+src="mortar-pestle.jpg"
+alt="Mortar and pestle">
+
+
+<img
+src="capsule-counting.jpg"
+alt="Capsule counting">
+
+
+<img
+src="tablet-compression.jpg"
+alt="Tablet compression machine">
+
+
+<img
+src="medicine-shelf.jpg"
+alt="Medicine shelf">
+
+
+<img
+src="graduated-cylinder.jpg"
+alt="Graduated cylinder">
+
+
+<img
+src="blister-packaging.jpg"
+alt="Blister packaging">
+
+
+<img
+src="pharmacy-stock.jpg"
+alt="Pharmacy stock">
 
 </div>
 
 </section>
+
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact">
 
 <div class="section-title">
-<h2>Let's Connect</h2>
-<p>For professional contact & collaboration</p>
+
+<h2>
+Let's Connect
+</h2>
+
+<p>
+For professional contact & collaboration
+</p>
+
 </div>
+
 
 <div class="contact-info">
-<p>📞 <b>6307727283</b></p>
-<p>✉️ <b>vishnutrivedivishnu@gmail.com</b></p>
+
+<p>
+📞 <b>6307727283</b>
+</p>
+
+<p>
+✉️ <b>vishnutrivedivishnu@gmail.com</b>
+</p>
+
 </div>
 
-<a class="btn primary" href="tel:6307727283">Call Me</a>
 
-<a class="btn secondary"
+<a
+class="btn primary"
+href="tel:6307727283">
+
+Call Me
+
+</a>
+
+
+<a
+class="btn secondary"
 href="https://wa.me/916307727283"
-target="_blank">WhatsApp</a>
+target="_blank">
 
-<a class="btn secondary"
-href="mailto:vishnutrivedivishnu@gmail.com">Email Me</a>
+WhatsApp
+
+</a>
+
+
+<a
+class="btn secondary"
+href="mailto:vishnutrivedivishnu@gmail.com">
+
+Email Me
+
+</a>
 
 </section>
 
+
 <footer>
+
 © 2026 Vishnu Trivedi • Pharmacist
+
 </footer>
 
 </body>
