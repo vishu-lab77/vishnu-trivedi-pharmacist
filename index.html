@@ -3,292 +3,448 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Vishnu Trivedi | Pharmacist</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+<meta name="description"
+content="Vishnu Trivedi - Pharmacist, healthcare enthusiast and content creator.">
 
-body{
-font-family:Arial,sans-serif;
-background:#fff7fa;
-color:#241820;
-line-height:1.6;
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7fbfd;
+    color:#14242d;
+    line-height:1.6;
+}
+
+/* HEADER */
+
 header{
-position:fixed;
-top:0;
-width:100%;
-z-index:1000;
-padding:16px 7%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(255,255,255,.95);
-backdrop-filter:blur(12px);
-border-bottom:1px solid #f1d7e2;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    padding:15px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #dcebf0;
 }
 
 .logo{
-font-size:24px;
-font-weight:bold;
+    font-size:25px;
+    font-weight:800;
+    color:#123b52;
 }
 
 .logo span{
-color:#e83e7b;
+    color:#16a6a1;
 }
 
 nav a{
-color:#241820;
-text-decoration:none;
-margin-left:20px;
-font-size:14px;
+    color:#17313d;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+    font-weight:600;
 }
 
+nav a:hover{
+    color:#0b8d8a;
+}
+
+/* HERO */
+
 .hero{
-min-height:100vh;
-padding:130px 8% 70px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:50px;
-background:
-radial-gradient(circle at 85% 25%,#ffd6e5,transparent 32%),
-linear-gradient(135deg,#fff,#fff4f8);
+    min-height:100vh;
+    padding:125px 8% 70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:55px;
+
+    background:
+    radial-gradient(circle at 85% 20%,#d8f2f3,transparent 32%),
+    linear-gradient(135deg,#ffffff,#f1f9fb);
 }
 
 .hero-text{
-max-width:650px;
+    max-width:650px;
+    animation:fadeUp .9s ease;
 }
 
 .badge{
-display:inline-block;
-padding:8px 15px;
-border:1px solid #e83e7b;
-border-radius:30px;
-color:#d62f6c;
-font-size:13px;
-letter-spacing:1px;
-margin-bottom:20px;
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid #18a5a2;
+    border-radius:30px;
+    color:#087c7a;
+    font-size:12px;
+    letter-spacing:1px;
+    margin-bottom:18px;
+    background:#effafa;
 }
 
 h1{
-font-size:64px;
-line-height:1.05;
-margin-bottom:20px;
+    font-size:62px;
+    line-height:1.05;
+    margin-bottom:20px;
+    color:#123b52;
 }
 
 h1 span{
-color:#e83e7b;
+    color:#0b9b98;
 }
 
 .hero p{
-color:#6f5b64;
-font-size:18px;
-margin-bottom:30px;
+    color:#60747d;
+    font-size:18px;
+    margin-bottom:25px;
 }
 
 .btn{
-display:inline-block;
-padding:13px 23px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-margin:5px;
+    display:inline-block;
+    padding:13px 23px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:4px;
+    transition:.25s;
 }
 
 .primary{
-background:#e83e7b;
-color:white;
+    background:#0b9b98;
+    color:white;
 }
 
 .secondary{
-border:1px solid #e83e7b;
-color:#b51f59;
+    border:1px solid #0b9b98;
+    color:#087c7a;
+    background:white;
 }
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(11,155,152,.18);
+}
+
+/* PROFILE */
 
 .profile{
-width:330px;
-height:420px;
-border-radius:30px;
-overflow:hidden;
-border:2px solid #e83e7b;
-background:#ffe8f0;
-box-shadow:0 18px 45px rgba(232,62,123,.18);
+    width:330px;
+    height:420px;
+    border-radius:28px;
+    overflow:hidden;
+    border:3px solid #0b9b98;
+    background:#e7f7f8;
+    box-shadow:0 18px 45px rgba(10,80,100,.16);
+    animation:profileIn 1s ease;
 }
 
-.profile-placeholder{
-height:100%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:#a36b80;
-font-size:18px;
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
+
+/* SECTIONS */
 
 section{
-padding:90px 8%;
+    padding:90px 8%;
 }
 
 .soft{
-background:#fff0f5;
+    background:#eef8fa;
 }
 
 .section-title{
-text-align:center;
-margin-bottom:45px;
+    text-align:center;
+    margin-bottom:42px;
 }
 
 .section-title h2{
-font-size:38px;
+    font-size:38px;
+    color:#123b52;
 }
 
 .section-title p{
-color:#806c75;
+    color:#71858d;
 }
 
+.reveal{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.7s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:none;
+}
+
+/* ABOUT */
+
 .about-content{
-max-width:850px;
-margin:auto;
-text-align:center;
+    max-width:850px;
+    margin:auto;
+    text-align:center;
 }
 
 .about-content p{
-color:#66545d;
-font-size:17px;
+    color:#526970;
+    font-size:17px;
 }
 
+/* CARDS */
+
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:22px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
 }
 
 .card{
-background:white;
-border:1px solid #f0d6e1;
-border-radius:22px;
-padding:28px;
-transition:.3s;
-box-shadow:0 10px 30px rgba(70,25,45,.06);
+    background:white;
+    border:1px solid #dcebf0;
+    border-radius:22px;
+    padding:28px;
+    box-shadow:0 10px 30px rgba(20,60,80,.06);
+    transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
-border-color:#e83e7b;
+    transform:translateY(-8px);
+    border-color:#0b9b98;
+    box-shadow:0 16px 35px rgba(11,155,152,.12);
 }
 
 .icon{
-font-size:40px;
-margin-bottom:12px;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#17465d;
 }
 
 .card p{
-color:#806c75;
-font-size:14px;
+    color:#71858d;
+    font-size:14px;
 }
 
+/* VIDEO */
+
 .video-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .video{
-background:white;
-border-radius:20px;
-overflow:hidden;
-border:1px solid #f0d6e1;
-box-shadow:0 10px 30px rgba(70,25,45,.06);
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid #dcebf0;
+    box-shadow:0 10px 30px rgba(20,60,80,.06);
 }
 
 .video video{
-width:100%;
-display:block;
-background:#210f17;
+    width:100%;
+    display:block;
+    background:#09242e;
 }
 
 .video-info{
-padding:18px;
+    padding:18px;
 }
 
 .video-info h3{
-margin-bottom:5px;
+    color:#17465d;
 }
 
 .video-info p{
-color:#806c75;
-font-size:14px;
+    color:#71858d;
+    font-size:14px;
 }
 
+/* GALLERY */
+
 .gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:18px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
 }
 
 .gallery img{
-width:100%;
-height:230px;
-object-fit:cover;
-border-radius:20px;
-border:1px solid #f0d6e1;
-transition:.3s;
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:20px;
+    border:1px solid #dcebf0;
+    cursor:pointer;
+    transition:.3s;
+    background:#eaf5f7;
 }
 
 .gallery img:hover{
-transform:scale(1.03);
+    transform:scale(1.03);
+    box-shadow:0 12px 25px rgba(20,70,90,.12);
 }
 
+/* FULL SCREEN IMAGE */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    background:rgba(4,22,30,.94);
+    align-items:center;
+    justify-content:center;
+    padding:25px;
+}
+
+.lightbox.open{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:94%;
+    max-height:88vh;
+    border-radius:18px;
+}
+
+.close{
+    position:absolute;
+    right:22px;
+    top:10px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+/* SOCIAL */
+
+.socials{
+    margin-top:18px;
+}
+
+.socials a{
+    display:inline-block;
+    margin:5px;
+    padding:11px 18px;
+    border-radius:25px;
+    text-decoration:none;
+    border:1px solid #0b9b98;
+    color:#087c7a;
+    background:white;
+    transition:.25s;
+}
+
+.socials a:hover{
+    background:#0b9b98;
+    color:white;
+}
+
+/* CONTACT */
+
 .contact{
-background:linear-gradient(135deg,#ffe3ed,#fff7fa);
-text-align:center;
+    background:
+    linear-gradient(135deg,#dff5f5,#f7fbfd);
+    text-align:center;
 }
 
 .contact-info{
-margin:25px auto;
-font-size:17px;
+    margin:22px auto;
+    font-size:17px;
 }
 
 .contact-info p{
-margin:8px;
+    margin:8px;
 }
 
 footer{
-text-align:center;
-padding:25px;
-color:#8c737e;
-border-top:1px solid #f1d7e2;
+    text-align:center;
+    padding:25px;
+    color:#71858d;
+    border-top:1px solid #dcebf0;
+    background:white;
 }
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+@keyframes profileIn{
+    from{
+        opacity:0;
+        transform:translateY(25px) scale(.97);
+    }
+
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+/* MOBILE */
 
 @media(max-width:750px){
 
-nav{
-display:none;
-}
+    nav{
+        display:none;
+    }
 
-.hero{
-flex-direction:column;
-text-align:center;
-padding-top:120px;
-}
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding-top:115px;
+    }
 
-h1{
-font-size:45px;
-}
+    h1{
+        font-size:45px;
+    }
 
-.profile{
-width:270px;
-height:350px;
-}
+    .profile{
+        width:280px;
+        height:355px;
+    }
+
+    section{
+        padding:70px 6%;
+    }
 
 }
 </style>
 </head>
 
 <body>
+
+<!-- HEADER -->
 
 <header>
 
@@ -307,7 +463,7 @@ Vishnu<span>.</span>
 </header>
 
 
-<!-- HOME -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -334,23 +490,30 @@ Contact Me
 Watch Video
 </a>
 
+<div class="socials">
+
+<a href="https://www.instagram.com/digital_vishnu77/"
+target="_blank">
+📷 Instagram
+</a>
+
+<a href="https://www.facebook.com/share/1F1KEwQ7Xc/"
+target="_blank">
+🔵 Facebook
+</a>
+
+</div>
+
 </div>
 
 
-<!-- PERSONAL PHOTO WILL BE ADDED LATER -->
+<!-- YOUR PROFILE PHOTO -->
 
 <div class="profile">
 
-<div class="profile-placeholder">
-
-👨‍⚕️
-
-<br><br>
-
-Your professional photo<br>
-will be added here
-
-</div>
+<img
+src="file_0000000057448211a86ff40b532a006d.png"
+alt="Vishnu Trivedi Pharmacist">
 
 </div>
 
@@ -359,7 +522,7 @@ will be added here
 
 <!-- ABOUT -->
 
-<section id="about" class="soft">
+<section id="about" class="soft reveal">
 
 <div class="section-title">
 
@@ -376,12 +539,10 @@ My professional journey
 <div class="about-content">
 
 <p>
-
 Hello, I'm <b>Vishnu Trivedi</b>, a pharmacy professional
 passionate about healthcare, medicines and continuous learning.
 This website is my professional space to share my journey,
 knowledge and healthcare-related content.
-
 </p>
 
 </div>
@@ -391,7 +552,7 @@ knowledge and healthcare-related content.
 
 <!-- SKILLS -->
 
-<section id="skills">
+<section id="skills" class="reveal">
 
 <div class="section-title">
 
@@ -405,74 +566,38 @@ Areas I'm passionate about
 
 </div>
 
-
 <div class="cards">
 
 <div class="card">
-
-<div class="icon">
-💊
-</div>
-
-<h3>
-Pharmacy
-</h3>
-
+<div class="icon">💊</div>
+<h3>Pharmacy</h3>
 <p>
 Pharmaceutical sciences, medicines and pharmacy knowledge.
 </p>
-
 </div>
-
 
 <div class="card">
-
-<div class="icon">
-🧪
-</div>
-
-<h3>
-Healthcare
-</h3>
-
+<div class="icon">🧪</div>
+<h3>Healthcare</h3>
 <p>
 Healthcare awareness and educational information.
 </p>
-
 </div>
-
 
 <div class="card">
-
-<div class="icon">
-📚
-</div>
-
-<h3>
-Learning
-</h3>
-
+<div class="icon">📚</div>
+<h3>Learning</h3>
 <p>
 Continuous learning and professional development.
 </p>
-
 </div>
-
 
 <div class="card">
-
-<div class="icon">
-🎬
-</div>
-
-<h3>
-Content Creation
-</h3>
-
+<div class="icon">🎬</div>
+<h3>Content Creation</h3>
 <p>
 Educational and engaging healthcare content.
 </p>
-
 </div>
 
 </div>
@@ -482,7 +607,7 @@ Educational and engaging healthcare content.
 
 <!-- VIDEO -->
 
-<section id="videos" class="soft">
+<section id="videos" class="soft reveal">
 
 <div class="section-title">
 
@@ -496,12 +621,14 @@ Drugs & Pharmacy Instruments
 
 </div>
 
-
 <div class="video-grid">
 
 <div class="video">
 
-<video controls playsinline poster="pharmacy-tablets.jpg">
+<video
+controls
+playsinline
+poster="pharmacy-tablets.jpg">
 
 <source
 src="pharmacy-instruments-video.mp4"
@@ -510,7 +637,6 @@ type="video/mp4">
 Your browser does not support video.
 
 </video>
-
 
 <div class="video-info">
 
@@ -534,7 +660,7 @@ pharmacy instruments.
 
 <!-- GALLERY -->
 
-<section id="gallery">
+<section id="gallery" class="reveal">
 
 <div class="section-title">
 
@@ -543,67 +669,44 @@ Pharmacy Gallery
 </h2>
 
 <p>
-Drugs, instruments & pharmacy visuals
+Tap any image to view it full screen
 </p>
 
 </div>
 
-
 <div class="gallery">
 
-
-<img
-src="pharmacy-tablets.jpg"
+<img src="pharmacy-tablets.jpg"
 alt="Pharmaceutical tablets">
 
-
-<img
-src="amoxicillin-capsules.jpg"
+<img src="amoxicillin-capsules.jpg"
 alt="Capsules">
 
-
-<img
-src="liquid-preparation.jpg"
+<img src="liquid-preparation.jpg"
 alt="Liquid preparation">
 
-
-<img
-src="electronic-balance.jpg"
+<img src="electronic-balance.jpg"
 alt="Electronic weighing balance">
 
-
-<img
-src="mortar-pestle.jpg"
+<img src="mortar-pestle.jpg"
 alt="Mortar and pestle">
 
-
-<img
-src="capsule-counting.jpg"
+<img src="capsule-counting.jpg"
 alt="Capsule counting">
 
-
-<img
-src="tablet-compression.jpg"
+<img src="tablet-compression.jpg"
 alt="Tablet compression machine">
 
-
-<img
-src="medicine-shelf.jpg"
+<img src="medicine-shelf.jpg"
 alt="Medicine shelf">
 
-
-<img
-src="graduated-cylinder.jpg"
+<img src="graduated-cylinder.jpg"
 alt="Graduated cylinder">
 
-
-<img
-src="blister-packaging.jpg"
+<img src="blister-packaging.jpg"
 alt="Blister packaging">
 
-
-<img
-src="pharmacy-stock.jpg"
+<img src="pharmacy-stock.jpg"
 alt="Pharmacy stock">
 
 </div>
@@ -611,9 +714,24 @@ alt="Pharmacy stock">
 </section>
 
 
+<!-- FULLSCREEN GALLERY -->
+
+<div class="lightbox" id="lightbox">
+
+<div class="close" id="close">
+&times;
+</div>
+
+<img id="lightboxImg"
+src=""
+alt="Full size pharmacy image">
+
+</div>
+
+
 <!-- CONTACT -->
 
-<section id="contact" class="contact">
+<section id="contact" class="contact reveal">
 
 <div class="section-title">
 
@@ -627,7 +745,6 @@ For professional contact & collaboration
 
 </div>
 
-
 <div class="contact-info">
 
 <p>
@@ -640,42 +757,98 @@ For professional contact & collaboration
 
 </div>
 
-
-<a
-class="btn primary"
+<a class="btn primary"
 href="tel:6307727283">
-
 Call Me
-
 </a>
 
-
-<a
-class="btn secondary"
+<a class="btn secondary"
 href="https://wa.me/916307727283"
 target="_blank">
-
 WhatsApp
-
 </a>
 
-
-<a
-class="btn secondary"
+<a class="btn secondary"
 href="mailto:vishnutrivedivishnu@gmail.com">
-
 Email Me
-
 </a>
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
 © 2026 Vishnu Trivedi • Pharmacist
 
 </footer>
+
+
+<script>
+
+/* SCROLL ANIMATION */
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+const observer =
+new IntersectionObserver(
+(entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},
+{threshold:.12}
+);
+
+reveals.forEach(element=>{
+observer.observe(element);
+});
+
+
+/* FULL SCREEN GALLERY */
+
+const lightbox =
+document.getElementById("lightbox");
+
+const lightboxImg =
+document.getElementById("lightboxImg");
+
+const close =
+document.getElementById("close");
+
+document
+.querySelectorAll(".gallery img")
+.forEach(image=>{
+
+image.addEventListener("click",()=>{
+
+lightboxImg.src=image.src;
+
+lightbox.classList.add("open");
+
+});
+
+});
+
+
+close.onclick=()=>{
+lightbox.classList.remove("open");
+};
+
+
+lightbox.onclick=(event)=>{
+
+if(event.target===lightbox){
+lightbox.classList.remove("open");
+}
+
+};
+
+</script>
 
 </body>
 </html>
